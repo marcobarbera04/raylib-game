@@ -1,4 +1,4 @@
-#include "Actor.h"
+#include "actor.h"
 
 void initActor(struct Actor* actor, float posX, float posY, float sizeX, float sizeY, float speed, Color color){
     actor->posX = posX;

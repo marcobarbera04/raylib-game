@@ -1,18 +1,15 @@
 #include "game.h"
-#include "actor.h"
-
-const int screenWidth = 1080;
-const int screenHeight = 1080;
 
 void run()
 {
+    struct Config config;
+    loadConfiguration(&config);
+
     struct Actor player;
     initActor(&player, 540, 540, 50, 50, 1000, ORANGE);
 
-    const int screenWidth = 1080;
-    const int screenHeight = 1080;
-
-    InitWindow(screenWidth, screenHeight, "Game");
+    printf("res: %dx%d\n", config.screenWidth, config.screenHeight);
+    InitWindow(config.screenWidth, config.screenHeight, "Game");
     SetTargetFPS(60);
     while(WindowShouldClose() == false)
     {
