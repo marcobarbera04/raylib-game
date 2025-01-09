@@ -5,12 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct Config
+typedef struct Config
 {
     int screenWidth;
     int screenHeight;
-};
+}Config;
 
-void loadConfiguration(struct Config *config);
+void loadConfiguration(Config *config);
 
 #endif

@@ -1,11 +1,8 @@
 #include "config.h"
 
-void loadConfiguration(struct Config *config)
+void loadConfiguration(Config *config)
 {
-    /*config->screenWidth = 600;      //default
-    config->screenHeight = 600;*/     //default
-
-    FILE *file = fopen("config.txt", "r");      //path relative to the .exe
+    FILE *file = fopen("config.txt", "r");      // path relative to the .exe
     if(file == NULL)
     {
         printf("[ERROR]: could not open config file\n");

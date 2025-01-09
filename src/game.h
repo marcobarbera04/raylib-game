@@ -4,6 +4,7 @@
 #include "..\include\raylib.h"
 #include "config.h"
 #include "actor.h"
+#include "drawActor.h"
 
 void run();
 
