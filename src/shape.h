@@ -15,15 +15,13 @@ typedef struct Triangle
     Vector2 v1;
     Vector2 v2;
     Vector2 v3;
-    Color color;
 }Triangle;
 
 typedef struct Circle       
 {
-    int centerX;
-    int centerY;
+    float centerX;
+    float centerY;
     float radius;
-    Color color;
 }Circle;
 
 #endif

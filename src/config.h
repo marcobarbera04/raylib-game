@@ -7,8 +7,8 @@
 
 typedef struct Config
 {
-    int screenWidth;
-    int screenHeight;
+    float screenWidth;
+    float screenHeight;
 }Config;
 
 void loadConfiguration(Config *config);

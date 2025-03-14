@@ -2,7 +2,7 @@
 
 void loadConfiguration(Config *config)
 {
-    FILE *file = fopen("config.txt", "r");      // path relative to the .exe
+    FILE *file = fopen("config.txt", "r");      // Path relative to the .exe
     if(file == NULL)
     {
         printf("[ERROR]: could not open config file\n");
